@@ -9,7 +9,9 @@ export class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Users />
+        <div className="container">
+          <Users />
+        </div>
       </div>
     );
   }
