@@ -1,11 +1,11 @@
 import React from 'react'
 
-const UserItem = () => {
+const UserItem = (props) => {
     const {
       login,
       avatar_url,
       html_url
-    } = this.props.user;
+    } = props.user;
 
   return (
     <div className='card text-center'>
