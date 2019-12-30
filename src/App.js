@@ -5,8 +5,9 @@ import axios from 'axios';
 import './App.css';
 
 export class App extends Component {
-componentDidMount() {
-  axios.get('https://api.github.com/users').then(res => console.log(res.data));
+async componentDidMount() {
+  const res = await axios.get('https://api.github.com/users');
+  console.log(res.data);
 }
 
   render() {
